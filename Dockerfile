@@ -1,3 +1,4 @@
 FROM centos
 WORKDIR /
-CMD yum update && yum install java wget git -y
+RUN yum update 
+RUN yum install java wget git -y
